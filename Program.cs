@@ -22,5 +22,14 @@ int result = numberA + numberB;
 Console.WriteLine(result);
 */
 
+Console.Write("Input a first number: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a second number: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
 
+int guad = num2 * num2;
 
+if(num1 == guad)
+    Console.Write ("Yes! ");
+else
+    Console.Write ("No! ");    
