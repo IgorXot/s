@@ -117,7 +117,7 @@ while(current <= num)
 //-----------------------------------------Seminar2----------------------------------------------------
 
 //1. Напишите программу, которая выводит случайное трёхзначное число и удаляет вторую цифру этого числа.
-
+/*
 int CutNumber(int num)
 {
     int sot = num / 100;
@@ -128,8 +128,33 @@ int CutNumber(int num)
 int RandNum = new Random().Next(100,1000);
 int newNum = CutNumber(RandNum);
 Console.WriteLine($"New version of a number {RandNum} is {newNum}");
+*/
+
+//2. Напишите программу, которая выводит случайное число из отрезка [10, 99] и показывает наибольшую цифру числа.
+
+int MaxNum(int num)
+{
+    int num1 = num / 10;
+    int num2 = num % 10;
+    int maxnum;
+    if(num1 > num2)
+    {
+        maxnum = num1;
+    }
+    else
+    {
+        maxnum = num2;
+    }
+    return maxnum;
+}
+int RandNum = new Random().Next(10,99);
+int newnum = MaxNum(RandNum);
+Console.WriteLine($"New version of a number {RandNum} is {newnum}");
+
+
+//3.Напишите программу, которая будет принимать на вход два числа и выводить, является ли второе число кратным первому.
 
 
 
 
-
+//4. Напишите программу, которая принимает на вход число и проверяет, кратно ли оно одновременно a и b.
