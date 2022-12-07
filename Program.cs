@@ -100,7 +100,7 @@ else
 */
 
 // Задача 7.  Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
-
+/*
 Console.Write("Input an integer number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
@@ -112,3 +112,24 @@ while(current <= num)
     Console.Write(current + " ");
     current++;
 }       
+*/
+
+//-----------------------------------------Seminar2----------------------------------------------------
+
+//1. Напишите программу, которая выводит случайное трёхзначное число и удаляет вторую цифру этого числа.
+
+int CutNumber(int num)
+{
+    int sot = num / 100;
+    int ed = num % 10;
+    int result = sot * 10 + ed;
+    return result;
+}
+int RandNum = new Random().Next(100,1000);
+int newNum = CutNumber(RandNum);
+Console.WriteLine($"New version of a number {RandNum} is {newNum}");
+
+
+
+
+
